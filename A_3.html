@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+<h1>Greetings</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+     const num1 = prompt('Input first number:');
+     const num1int = parseInt(num1);
+
+     const num2 = prompt('Input second number:');
+     const num2int = parseInt(num2);
+
+     const num3 = prompt('Input third number:');
+     const num3int = parseInt(num3);
+
+     const average = (num1int + num2int + num3int) / 3
+
+    document.querySelector('#target').innerHTML = 'Average of numbers is: ' + average;
+    console.log('Average of numbers is: ' + average);
+</script>
+</body>
+</html>
