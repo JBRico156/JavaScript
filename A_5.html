@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<h1>Karkausvuosi tarkastaja</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    const vuosiluku = prompt('Syötä vuosiluku: ');
+    const vuosi = parseInt(vuosiluku);
+
+    let Message;
+
+    if (vuosi % 400 === 0 || (vuosi % 100 !== 0 && vuosi % 4 === 0)) {
+        Message = vuosi + ', vuosi on karkausvuosi';
+    } else {
+        Message = vuosi + ', vuosi ei ole karkausvuosi';
+    }
+    document.getElementById('target').innerText = Message;
+
+</script>
+</body>
+</html>
